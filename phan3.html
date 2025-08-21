@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login.php" method="post">
+        <h2>Đăng nhập</h2>
+        <label>Username:</label>
+        <input type="text" name="username" required><br><br>
+        
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+        
+        <button type="submit">Đăng nhập</button>
+    </form>
+    <form action="booking.php" method="post">
+        <h2>Đặt bàn</h2>
+        
+        <label>Tên khách hàng:</label>
+        <input type="text" name="name" required><br><br>
+        
+        <label>Số người:</label>
+        <input type="number" name="people" min="1" required><br><br>
+        
+        <label>Ngày giờ:</label>
+        <input type="datetime-local" name="datetime" required><br><br>
+        
+        <label>Yêu cầu đặc biệt:</label><br>
+        <textarea name="note" rows="3" cols="40"></textarea><br><br>
+        
+        <button type="submit">Đặt bàn</button>
+    </form>
+    <form action="payment.php" method="post">
+        <h2>Thanh toán đơn hàng</h2>
+        
+        <label>Họ tên:</label>
+        <input type="text" name="fullname" required><br><br>
+        
+        <label>Số điện thoại:</label>
+        <input type="tel" name="phone" required><br><br>
+        
+        <label>Địa chỉ:</label><br>
+        <textarea name="address" rows="3" cols="40" required></textarea><br><br>
+        
+        <label>Hình thức thanh toán:</label><br>
+        <input type="radio" name="payment" value="cod"> Thanh toán khi nhận hàng<br>
+        <input type="radio" name="payment" value="card"> Thẻ tín dụng<br>
+        <input type="radio" name="payment" value="bank"> Chuyển khoản<br><br>
+        
+        <button type="submit">Thanh toán</button>
+    </form>
+
+</body>
+</html>
