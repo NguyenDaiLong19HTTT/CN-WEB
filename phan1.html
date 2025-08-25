@@ -1,51 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giới Thiệu Bản Thân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #eebeeb;
+        }
+        h1 {
+            color: #e59494;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #282525;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+        div{
+            li {
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #333;
+            background-color: chartreuse;
+        }
+        }
+        table {
+            width: 20%;
+            border-collapse: collapse;
+            margin-top: 50px;
+            background-color: #f9f9f9;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            margin-top: 30px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            
+        }
+        #nut{
+            background-color: #e59494;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        a {
+            color: #170d0d;
+            text-decoration: lightcoral;
+        }
+       
+        
+        
+    </style>
 </head>
-
 <body>
-    <h1>tôi là Nguyễn Đại Long</h1>
-    <p>ngày sinh: 25/10/2005</p>
-    <img src="../img/5d0d1dfa8624536f5b97e170c5a2b626.jpg" alt="Nguyễn Đại Long">
-    <p>sở thích: ngủ</p>
-    <ul> Môn học iu thích
+    <div>
+        <h1>Giới Thiệu Bản Thân</h1>
+        <img src="../img/5d0d1dfa8624536f5b97e170c5a2b626.jpg" alt="">
+        <p>Xin chào! Tôi tên là Nguyễn Đại Long, sinh năm 2005. Hiện tôi đang là sinh viên năm thứ ba tại IUH, chuyên ngành Công nghệ Thông tin. Tôi có niềm đam mê lớn với lập trình và phát triển phần mềm.</p>
+        <p>Trong thời gian rảnh, tôi thích đọc sách về công nghệ, tham gia các khóa học trực tuyến để nâng cao kỹ năng lập trình của mình. Tôi cũng rất thích chơi thể thao, đặc biệt là bóng đá và cầu lông.</p>
+        <p>Mục tiêu của tôi trong tương lai là trở thành một kỹ sư phần mềm giỏi, đóng góp vào sự phát triển của ngành công nghệ thông tin tại Việt Nam. Tôi luôn cố gắng học hỏi và hoàn thiện bản thân mỗi ngày để đạt được mục tiêu đó.</p>
+    </div>
+    <h1>Môn học iu thích</h1>
+    <ul>
         <li>toán</li>
         <li>văn</li>
         <li>anh</li>
         <li>lý</li>
+        <li>hóa</li>
+        <li>sinh</li>
+        <li>địa</li>
+        <li>sử</li>
     </ul>
+    <h1>Thời Khoá Biểu: </h1>
     <table>
         <tr>
-            <th>Thứ </th>
-            <th>Môn học </th>
-            <th>Giờ học </th>
-            <th>Phòng học </th>
+            <th>STT</th>
+            <th>Môn học</th>
+            <th>Giáo viên</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>toán</td>
+            <td>thầy anh</td>
         </tr>
         <tr>
             <td>2</td>
-            <td> toán</td>
-            <td>2pm</td>
-            <td>A01</td>
+            <td>văn</td>
+            <td>cô Bich</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>anh</td>
+            <td>thầy Cao</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>lý</td>
+            <td>thầy Duc</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>hóa</td>
+            <td>cô Em</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>sinh</td>
+            <td>cô Lan</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>địa</td>
+            <td>thầy Giao</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>sử</td>
+            <td>cô Hoa</td>
         </tr>
     </table>
-    <h2>EMAIL </h2>
-    <FORM>
+    <h1>From Đăng Kí: </h1>
+    <form>
         <label for="ten">Họ và tên</label>
         <input type="text" id="ten">
         <label for="sdt">SĐT</label>
         <input type="text" id="sdt">
         <label for="gt">Giới Tính</label>
         <input type="text" id="gt">
-        <input type="button" value="button">
-    </FORM>
-    <p>link:
-        <a href="https://drive.google.com/drive/folders/14ylcYWNxYM-H9DjfI8OTBRgzizvJ-Yo9" target="_blank">google drive</a>
-    </p>
-
+        <input id ="nut" type="button" value="button">
+    </form>
+    <H1>Link FB: </H1>
+    <a href="https://www.facebook.com/dailong2510/">facebook</a>
+    
 </body>
-
 </html>
